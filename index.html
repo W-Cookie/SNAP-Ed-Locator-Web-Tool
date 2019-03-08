@@ -405,8 +405,11 @@
 		
 		//Add GeoSearch box
 		var GeoSearchControl = window.GeoSearch.GeoSearchControl;
-		var GoogleProvider = window.GeoSearch.GoogleProvider;
-		var myProvider = new GoogleProvider;
+		//Google provide is not working properly
+		//var GoogleProvider = window.GeoSearch.GoogleProvider;
+		var OpenStreetMapProvider = window.GeoSearch.OpenStreetMapProvider;
+		var myProvider = new OpenStreetMapProvider;		
+		//var myProvider = new GoogleProvider;
 
 		var searchControl = new GeoSearchControl({
 				provider: myProvider,           // required
